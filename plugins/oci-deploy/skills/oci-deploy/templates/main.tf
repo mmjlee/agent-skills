@@ -13,22 +13,22 @@ terraform {
   required_providers {
     oci = {
       source  = "oracle/oci"
-      version = ">= 7.12.0"
+      version = ">= 9.3.0"
     }
     random = {
       source  = "hashicorp/random"
-      version = ">= 3.6.0"
+      version = ">= 3.9.0"
     }
 
     # Add only when the cloudflare addon is invoked below:
-    # cloudflare = { source = "cloudflare/cloudflare", version = "~> 4.0" }
-    # tls        = { source = "hashicorp/tls",         version = ">= 4.0.0" }
+    # cloudflare = { source = "cloudflare/cloudflare", version = ">= 5.0.0" }
+    # tls        = { source = "hashicorp/tls",         version = ">= 4.4.0" }
 
     # Add only when the auth0 addon is invoked below:
-    # auth0 = { source = "auth0/auth0", version = ">= 1.0.0" }
+    # auth0 = { source = "auth0/auth0", version = ">= 1.58.0" }
 
     # Add only when the github addon is invoked below:
-    # github = { source = "integrations/github", version = "~> 6.0" }
+    # github = { source = "integrations/github", version = ">= 6.13.0" }
   }
 
   # Optional remote state in OCI Object Storage.
